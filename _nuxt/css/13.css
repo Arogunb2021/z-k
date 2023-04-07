@@ -1,0 +1,59 @@
+.wrongNetworkModal .text-sm {
+    font-size: 13px
+}
+
+.userImg {
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s ease;
+    will-change: opacity
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0 !important
+}
+
+.fadeFast-enter-active,
+.fadeFast-leave-active {
+    transition: .2s ease
+}
+
+.fadeFast-enter,
+.fadeFast-leave-to {
+    opacity: 0 !important
+}
+
+.slide-vertical-fade-enter-active,
+.slide-vertical-fade-leave-active {
+    transition: .2s ease;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    will-change: transform, opacity
+}
+
+.slide-vertical-fade-enter,
+.slide-vertical-fade-leave-to {
+    opacity: 0
+}
+
+.slide-vertical-fade-enter {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px)
+}
+
+.slide-vertical-fade-leave-to {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px)
+}
+
+.accountActivationModal .text-sm {
+    font-size: 13px
+}

@@ -1,0 +1,138 @@
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s ease;
+    will-change: opacity
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0 !important
+}
+
+.fadeFast-enter-active,
+.fadeFast-leave-active {
+    transition: .2s ease
+}
+
+.fadeFast-enter,
+.fadeFast-leave-to {
+    opacity: 0 !important
+}
+
+.slide-vertical-fade-enter-active,
+.slide-vertical-fade-leave-active {
+    transition: .2s ease;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    will-change: transform, opacity
+}
+
+.slide-vertical-fade-enter,
+.slide-vertical-fade-leave-to {
+    opacity: 0
+}
+
+.slide-vertical-fade-enter {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px)
+}
+
+.slide-vertical-fade-leave-to {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px)
+}
+
+.indexLayout {
+    min-height: 100vh
+}
+
+.indexLayout .routerContainer .dappPageWrapper>* {
+    margin: 1rem 0
+}
+
+.indexLayout footer a {
+    color: #4e529a;
+    transition: color .3s ease
+}
+
+.indexLayout footer a:hover {
+    color: #8c8dfc
+}
+
+@media (max-width:768px) {
+    .indexLayout .routerContainer {
+        min-height: auto
+    }
+}
+
+.indexLayout .projectLogo {
+    width: 100%;
+    max-width: 300px;
+    height: auto
+}
+
+.indexLayout .externalWalletPopover .popover {
+    width: 330px;
+    padding: 20px 30px
+}
+
+.indexLayout .externalWalletPopover .popover.-dark .iconsBlock a .ov-icon,
+.indexLayout .externalWalletPopover .popover.-dark .iconsBlock a i {
+    color: #171a49
+}
+
+.indexLayout .externalWalletPopover .popover.-light .iconsBlock a .ov-icon,
+.indexLayout .externalWalletPopover .popover.-light .iconsBlock a i {
+    color: #fff
+}
+
+.indexLayout .externalWalletPopover .popover .h5 {
+    margin: 0;
+    font-size: 22px;
+    text-align: center
+}
+
+.indexLayout .externalWalletPopover .popover .description {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.indexLayout .externalWalletPopover .popover .contactInfo {
+    width: 100%;
+    max-width: 255px;
+    margin: 15px auto 0
+}
+
+.indexLayout .externalWalletPopover .popover .contactInfo .infoDescription {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center
+}
+
+.indexLayout .externalWalletPopover .popover .contactInfo .iconsBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 18px
+}
+
+.indexLayout .externalWalletPopover .popover .contactInfo .iconsBlock a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    background-color: #4e529a;
+    border-radius: 50%
+}
+
+.indexLayout .externalWalletPopover .popover .contactInfo .iconsBlock a .ov-icon,
+.indexLayout .externalWalletPopover .popover .contactInfo .iconsBlock a i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center
+}
